@@ -59,7 +59,7 @@ class TestBooksCollector:
         collector.set_book_genre("Гордость и предубеждение и зомби", "Фантастика")
         collector.set_book_genre("Война и мир", "Драма")
 
-        assert collector.get_books_for_children() == []
+        assert collector.get_books_for_children() == ["Гордость и предубеждение и зомби"]
 
     def test_add_book_in_favorites(self):
         collector = BooksCollector()
